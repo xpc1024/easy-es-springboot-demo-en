@@ -25,7 +25,7 @@ public class TestUseEeController {
 
     @GetMapping("/index")
     public Boolean index() {
-        // init-> create index, just like create table in MySQL, this interface must be first invoke and only execute once
+        // init-> create index, just like create table in MySQL, this interface must be first invoked and only execute once
         LambdaEsIndexWrapper<Document> indexWrapper = new LambdaEsIndexWrapper<>();
         indexWrapper.indexName(Document.class.getSimpleName().toLowerCase());
         indexWrapper.mapping(Document::getTitle, FieldType.KEYWORD)
