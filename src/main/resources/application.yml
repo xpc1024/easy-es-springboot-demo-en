@@ -1,4 +1,5 @@
 easy-es:
-  address: 11.22.63.118:9200
-  username: elastic #es用户名,若无则删去此行配置
-  password: WG7WVmuNMtM4GwNYkyWH #es密码,若无则删去此行配置
+  eanble: true # The default value is true, If the value of enable is false, it is considered that Easy-es is not enabled
+  address: 127.0.0.0:9200 # Your elasticsearch address,must contains port, If it is a cluster, please separate with',' just like this: 127.0.0.0:9200,127.0.0.1:9200
+  username: elastic # Es username, Not necessary, If it is not set in your elasticsearch, delete this line
+  password: WG7WVmuNMtM4GwNYkyWH # Es password, Not necessary, If it is not set, delete this line

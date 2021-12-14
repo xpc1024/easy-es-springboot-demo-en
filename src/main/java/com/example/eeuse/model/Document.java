@@ -3,23 +3,29 @@ package com.example.eeuse.model;
 import lombok.Data;
 
 /**
- * ES数据模型
+ * ES data model
+ * we use the lombok(https://github.com/projectlombok/lombok) to generate getter and setter function
  * <p>
  * Copyright © 2021 xpc1024 All Rights Reserved
  **/
 @Data
 public class Document {
     /**
-     * es中的唯一id
+     * just like the primary key in MySQL
      */
     private String id;
 
     /**
-     * 文档标题
+     * title of document
      */
     private String title;
     /**
-     * 文档内容
+     * content of document
      */
     private String content;
+
+    /**
+     * creator of document
+     */
+    private String creator;
 }
