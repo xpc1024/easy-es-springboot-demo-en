@@ -9,6 +9,7 @@ import lombok.Data;
  * Copyright © 2021 xpc1024 All Rights Reserved
  **/
 @Data
+@TableName("document")
 public class Document {
     /**
      * just like the primary key in MySQL
