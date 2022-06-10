@@ -1,10 +1,8 @@
 package com.example.eeuse.controller;
 
+import cn.easyes.core.conditions.LambdaEsQueryWrapper;
 import com.example.eeuse.mapper.DocumentMapper;
 import com.example.eeuse.model.Document;
-import com.xpc.easyes.core.conditions.LambdaEsIndexWrapper;
-import com.xpc.easyes.core.conditions.LambdaEsQueryWrapper;
-import com.xpc.easyes.core.enums.FieldType;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,7 +36,7 @@ public class TestUseEeController {
         // Query all documents with title equals "Hi" and author equals "Guy"
         LambdaEsQueryWrapper<Document> wrapper = new LambdaEsQueryWrapper<>();
         wrapper.eq(Document::getTitle, "Hi")
-                .eq(Document::getCreator,"Guy");
+                .eq(Document::getCreator, "Guy");
         return documentMapper.selectList(wrapper);
     }
 }
