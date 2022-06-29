@@ -1,6 +1,6 @@
 package com.example.eeuse.model;
 
-import cn.easyes.annotation.TableName;
+import cn.easyes.annotation.IndexName;
 import lombok.Data;
 
 /**
@@ -10,7 +10,7 @@ import lombok.Data;
  * Copyright © 2021 xpc1024 All Rights Reserved
  **/
 @Data
-@TableName("document")
+@IndexName("document")
 public class Document {
     /**
      * just like the primary key in MySQL
